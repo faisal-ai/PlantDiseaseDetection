@@ -41,17 +41,11 @@ def classify():
     table = tk.Label(frame, text= str(np.round(pred)) , fg = 'black').pack()
     print('HERE')
 
-
-    # processed_image = vgg16.preprocess_input(image_batch.copy())
-    # predictions = vgg_model.predict(processed_image)
-    # label = decode_predictions(predictions)
     # table = tk.Label(frame, text="Top image class predictions and confidences").pack()
     # for i in range(0, len(label[0])):
     #      result = tk.Label(frame,
     #                 text= str(label[0][i][1]).upper() + ': ' +
     #                        str(round(float(label[0][i][2])*100, 3)) + '%').pack()
-
-
 
 root = tk.Tk()
 root.title('Portable Image Classifier')
